@@ -1,32 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import Botao from './components/Botao';
+import freeCodeCamp from '/freecodecamp.svg';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+  return(
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="freecodecamp-logo-recipiente">
+        <img 
+        src={freeCodeCamp}
+        alt="Logo di FreeCodeCamp" 
+        className='freecodecamp-logo'/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="recipiente-calculadora">
+      <div className="fila">
+        <Botao>1</Botao>
+        <Botao>+</Botao>
+
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="fila"></div>
+      <div className="fila"></div>
+      <div className="fila"></div>
+      <div className="fila"></div>
+      </div>
     </div>
   )
 }
