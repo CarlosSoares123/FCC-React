@@ -1,3 +1,4 @@
+import '../stylesheets/Botao.css'
 
 function Botao (props){
 
@@ -8,7 +9,8 @@ function Botao (props){
 
   return(
     <div 
-    className={`botao-recipente ${operador(props.children) ? 'operador' : null}`.trimEnd()}>
+    className={`botao-recipiente ${operador(props.children) ? 'operador' : null}`.trimEnd()}
+    onClick={() => props.dirigirClick(props.children)}>
     {props.children}
     </div>
     
