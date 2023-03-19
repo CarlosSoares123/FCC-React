@@ -28,7 +28,7 @@ function App() {
       <div className="recipiente-principal">
         <Contador numClick={numClick}/>
         <Botao
-          texto='Click'
+            texto='Click'
           botaoDeClick={true}
           dirigirClick={click}
         />
